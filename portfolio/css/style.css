@@ -1,0 +1,286 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ---------------------------------css reset ------------------------------------------------- */
+
+body{
+    background-color: lavender;
+    font-family: aurora;
+    
+}
+:root {
+    --text-color-white-bg: lavender;
+    --text-color-lavender-bg:white;
+    --text-color-header-white-background:rgb(98, 98, 160); 
+    --text-color-header-lavender-bg:white;
+    --text-color-header:black;
+    --bg-color-purple:lavender;
+    --aurora-font:src:url(aurora-regular.ttf);
+    --gaegu-font:src:url(gaegu-regular.ttf);
+
+}
+
+header{
+    
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    font-size: 1em;
+    z-index: 2;
+}
+
+
+
+/* Logo eva */
+header nav>button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+header nav>button a img{
+    width: 3em;
+    height: auto;
+    display: block;
+}
+/*---------- tekst about me/ projects/ interest in navbar ---------*/
+header nav ul:first-of-type li a{
+    text-decoration: none;
+   
+
+}
+
+header nav:first-of-type>ul{
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: white;
+    height: 3.2em;
+}
+
+/* main foto op voorpagina Eva */
+main section:first-of-type>div> img{
+width: 20em;
+height: auto;
+border-radius: .75em;
+display: block;
+margin: 0 auto;
+
+}
+
+section:first-of-type {
+    width: 100%;
+    height: 55vh;
+    background-color: var(--bg-color-purple);
+    z-index: -1;
+}
+/*----------- witte achtergrond voorpagina Eva - polaroid  ---------*/
+section:first-of-type div:first-of-type{
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    margin-top: 10em;
+    height: auto;
+    position: absolute;
+    top: 29%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/*--------------------------- Hi im Eva ------------------------------*/
+section:first-of-type>div>h1 {
+    /* top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: .5em;
+}
+
+section:nth-of-type(2){
+    width: 100%;
+    height:95vh;
+    left: 0;
+    margin-top: 20em;
+    background: white;
+    border-radius: 1em;
+    justify-content: center;
+    display: grid;
+}
+/*--------------- About me header ----------------*/
+section:nth-of-type(2) h2{
+margin-top: -.5em;
+display: flex;
+justify-content: center;
+font-size: 2em;
+    
+}
+/*----------- Tekst lila in About me ------------- */
+section:nth-of-type(2) p{
+    color: var(--text-color-header-white-background);
+    font-family: gaegu;
+    margin: 3em;
+    letter-spacing: .2em;
+    line-height: 1.5em;
+    
+
+}
+
+section:nth-of-type(3){
+    /* width: 100vh; */
+    height: 90vh;
+    overflow: auto;
+}
+/*----------------- kopje projects --------------*/
+section:nth-of-type(3) h2{
+    margin-top: -.5em;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    z-index: 2;
+    margin: 2em;
+}
+
+section:nth-of-type(3)>ul{
+    overflow: auto;
+    display: flex;
+}
+/*--------- polaroid Rijksmuseum - white polaroid background -------*/
+section:nth-of-type(3)>li:first-of-type>div{
+    background-color: white;
+    width: 16.5em;
+    align-items: center;
+    height: 31em;
+    border-radius: 1em;
+    justify-content: center;
+    position: absolute;
+    transform: translate(12%, 5%);
+}
+/* ---------- positioning and sizing of the image Rijksmuseum --------- */
+section:nth-of-type(3)>li:first-of-type>img{
+    width: 15em;
+    height: auto;
+    border-radius: .75em;
+    display: block;
+    margin: 1em auto;    
+}
+
+/* polaroid second project Artis - white polaroid background */
+section:nth-of-type(3)>li:nth-of-type(2)> div{
+    background-color: white;
+    width: 16.5em;
+    align-items: center;
+    height: 31em;
+    border-radius: 1em;
+    justify-content: center;
+    position: absolute;
+    transform: translate(20em, 5%);
+}
+
+/* positioning ans sizing of the image Artis */
+section:nth-of-type(3)>li:nth-of-type(2)>img{
+    width: 15em;
+    height: auto;
+    border-radius: 0.75em;
+    display: block;
+    margin: 1em auto;
+    margin-top: 10em; 
+}
+
+/* polaroid second project Cat - white polaroid background */
+section:nth-of-type(3)> div:nth-of-type(3){
+    background-color: white;
+    width: 16.5em;
+    align-items: center;
+    height: 31em;
+    border-radius: 1em;
+    justify-content: center;
+    position: absolute;
+    transform: translate(38.3em, 5%);
+}
+
+/* positioning ans sizing of the image Cat */
+section:nth-of-type(3)>div:nth-of-type(3)>img{
+    width: 13em;
+    height: auto;
+    border-radius: 0.75em;
+    display: block;
+    margin: 1em auto;
+    margin-top: 3em; 
+}
+
+/* polaroid second project myMelody - white polaroid background */
+section:nth-of-type(3)> div:nth-of-type(4){
+    background-color: white;
+    width: 16.5em;
+    align-items: center;
+    height: 31em;
+    border-radius: 1em;
+    justify-content: center;
+    position: absolute;
+    transform: translate(56.8em, 5%);
+}
+
+/* positioning ans sizing of the image myMelody */
+section:nth-of-type(3)>div:nth-of-type(4)>img{
+    width: 14em;
+    height: auto;
+    border-radius: 0.75em;
+    display: block;
+    margin: 1em auto;
+    margin-top: 1em; 
+}
